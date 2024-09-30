@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Streamline Net</title>
+    <title>Streamline Net</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,21 +14,21 @@
         }
 
         header {
-            background-color: #4682B4; /* Updated to steel blue */
+            background-color: #4682B4; /* Steel blue */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         header img {
-            max-width: 150px; /* Adjust the logo width */
+            max-width: 150px; /* Adjust the width of the logo */
             height: auto;
             display: block;
             margin: 0 auto 10px; /* Center the logo and add margin below */
         }
 
         nav {
-            background-color: #444;
+            background-color: #444; /* Dark grey */
             color: white;
             padding: 10px;
             text-align: center;
@@ -55,14 +55,25 @@
             color: #333;
         }
 
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .mission {
+            background-color: #e9e9e9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #4682B4; /* Steel blue */
             color: #fff;
             text-align: center;
-            padding: 5px; /* Reduced padding */
+            padding: 10px; /* Reduced padding for a smaller footer */
             width: 100%;
-            bottom: 0;
-            font-size: 0.9em; /* Optional: reduce font size for smaller text */
         }
 
         form {
@@ -105,8 +116,8 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo"> <!-- Logo added here -->
-        <h1>Contact Streamline Net</h1>
+        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo here -->
+        <h1>Welcome to Streamline Net</h1>
     </header>
 
     <nav>
@@ -114,25 +125,22 @@
         <a href="contact.html">Contact Us</a>
     </nav>
 
-    <!-- Contact Form Content -->
+    <!-- Landing Page Content -->
     <section>
-        <h1>Get In Touch</h1>
-        <!-- Formspree integration -->
-        <form action="https://formspree.io/f/mpwagkwo" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <h1>What We Do</h1>
+        <p>
+            At Streamline Net, we specialize in creating preset networks for small businesses. 
+            Currently, we focus on providing customized network solutions for restaurants and warehouses, 
+            ensuring they have fast, reliable, and secure connections for their daily operations.
+        </p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our goal is to create networks for a variety of small businesses and implement them 
+                affordably in their place of operation in a timely manner.
+            </p>
+        </div>
     </section>
 
     <footer>
