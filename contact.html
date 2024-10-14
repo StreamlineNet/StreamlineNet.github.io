@@ -52,7 +52,7 @@
         }
 
         .dropbtn {
-            background-color: #444;
+            background-color: #444; /* Dark grey */
             color: white;
             border: none;
             cursor: pointer;
@@ -62,13 +62,13 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9; /* Base color */
+            background-color: #444; /* Dark grey background */
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
         }
 
         .dropdown-content a {
-            color: black;
+            color: white; /* White text */
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -76,12 +76,11 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #555; /* Hover color matches navigation bar */
+            background-color: #555; /* Darker grey on hover */
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
-            background-color: #f9f9f9; /* Keep the base color */
         }
 
         section {
@@ -96,11 +95,9 @@
 
         footer {
             background-color: #444; /* Dark grey */
-            color: #fff; /* Set footer text color to white */
+            color: white;
             text-align: center;
             padding: 10px;
-            width: 100%;
-            bottom: 0;
         }
 
         form {
@@ -161,6 +158,7 @@
     <!-- Contact Form Content -->
     <section>
         <h1>Get In Touch</h1>
+        <!-- Formspree integration -->
         <form action="https://formspree.io/f/mpwagkwo" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
