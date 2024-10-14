@@ -21,10 +21,10 @@
         }
 
         header img {
-            max-width: 250px; /* Adjust the width of the logo */
+            max-width: 250px;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the logo */
+            margin: 0 auto 10px;
         }
 
         nav {
@@ -33,6 +33,13 @@
             padding: 10px;
             text-align: center;
             position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
         }
 
         nav .dropdown {
@@ -75,11 +82,9 @@
 
         footer {
             background-color: #444; /* Dark grey */
-            color: #fff; /* Set footer text color to white */
+            color: white; /* Set footer text color to white */
             text-align: center;
             padding: 10px;
-            width: 100%;
-            bottom: 0;
         }
 
         form {
@@ -122,7 +127,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo image here -->
+        <img src="logo.png" alt="Streamline Net Logo">
         <h1>Contact Streamline Net</h1>
     </header>
 
@@ -137,29 +142,11 @@
         </div>
     </nav>
 
-    <!-- Contact Form Content -->
     <section>
         <h1>Get In Touch</h1>
-        <!-- Formspree integration -->
         <form action="https://formspree.io/f/mpwagkwo" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Streamline Net - All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+            <input type="email" id="email" name
