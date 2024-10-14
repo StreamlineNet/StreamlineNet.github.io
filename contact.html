@@ -42,6 +42,14 @@
             font-size: 1.2em;
         }
 
+        nav a:visited {
+            color: white; /* Ensure visited links remain white */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Keep the hover effect */
+        }
+
         nav .dropdown {
             display: inline-block;
             position: relative;
@@ -82,7 +90,7 @@
 
         footer {
             background-color: #444; /* Dark grey */
-            color: white; /* Set footer text color to white */
+            color: white;
             text-align: center;
             padding: 10px;
         }
@@ -142,6 +150,7 @@
         </div>
     </nav>
 
+    <!-- Contact Form Content -->
     <section>
         <h1>Get In Touch</h1>
         <form action="https://formspree.io/f/mpwagkwo" method="POST">
@@ -149,4 +158,20 @@
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Streamline Net - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
