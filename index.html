@@ -21,10 +21,10 @@
         }
 
         header img {
-            max-width: 250px; /* Adjust the width of the logo */
+            max-width: 250px;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the logo */
+            margin: 0 auto 10px;
         }
 
         nav {
@@ -39,11 +39,11 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
-            padding: 8px 15px; /* Add padding for a button-like appearance */
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        nav a:hover, nav .dropdown:hover .dropdown-content {
+            background-color: #666; /* Gray background for hover */
+            color: white; /* White text for hover */
         }
 
         nav .dropdown {
@@ -51,19 +51,10 @@
             position: relative;
         }
 
-        nav .dropbtn {
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-size: 1.2em;
-            cursor: pointer;
-            padding: 8px 15px; /* Same padding as other links */
-        }
-
         nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #444; /* Match the nav background */
+            background-color: #444; /* Dark grey */
             min-width: 160px;
             z-index: 1;
         }
@@ -76,7 +67,7 @@
         }
 
         nav .dropdown-content a:hover {
-            background-color: #555;
+            background-color: #666; /* Gray background for hover */
         }
 
         nav .dropdown:hover .dropdown-content {
@@ -93,49 +84,50 @@
             color: #333;
         }
 
+        h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
         footer {
             background-color: #444; /* Dark grey */
-            color: #fff; /* Set footer text color to white */
+            color: #fff;
             text-align: center;
             padding: 10px;
             width: 100%;
             bottom: 0;
         }
-
-        .mission-statement {
-            margin-top: 20px;
-        }
-
-        .what-we-do {
-            margin-top: 40px;
-            color: #666;
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo">
+        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo here -->
         <h1>Welcome to Streamline Net</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">About</button>
+            <a href="javascript:void(0)">About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
-                <a href="meettheteam.html">Meet the Team</a>
+                <a href="meet-the-team.html">Meet the Team</a>
             </div>
         </div>
     </nav>
 
     <section>
-        <h1>Our Mission</h1>
-        <p class="mission-statement">Our goal is to create networks for a variety of small businesses and implement them affordably in their place of operation in a timely manner.</p>
-        <div class="what-we-do">
-            <h2>What We Do</h2>
-            <p>Streamline Net provides tailored networking solutions for small businesses, specializing in restaurants and warehouses.</p>
-        </div>
+        <h2>Our Mission</h2>
+        <p>Our goal is to create networks for a variety of small businesses and implement them affordably in their place of operation in a timely manner.</p>
+
+        <h2>What We Do</h2>
+        <p>We specialize in creating preset networks for small businesses, with a current focus on restaurants.</p>
     </section>
 
     <footer>
