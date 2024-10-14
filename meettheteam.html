@@ -41,47 +41,37 @@
             font-size: 1.2em;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        nav a:hover, nav .dropdown:hover .dropdown-content {
+            background-color: #666; /* Gray background for hover */
+            color: white; /* White text for hover */
         }
 
-        /* Dropdown Styles */
-        .dropdown {
+        nav .dropdown {
             display: inline-block;
             position: relative;
         }
 
-        .dropbtn {
-            background-color: #444;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-
-        .dropdown-content {
+        nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9; /* Base color */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            background-color: #444; /* Dark grey */
+            min-width: 160px;
             z-index: 1;
         }
 
-        .dropdown-content a {
-            color: black;
+        nav .dropdown-content a {
+            color: white;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            text-align: left;
         }
 
-        .dropdown-content a:hover {
-            background-color: #444; /* Hover color matches navigation bar */
+        nav .dropdown-content a:hover {
+            background-color: #666; /* Gray background for hover */
         }
 
-        .dropdown:hover .dropdown-content {
+        nav .dropdown:hover .dropdown-content {
             display: block;
-            background-color: #f9f9f9; /* Keep the base color */
         }
 
         section {
@@ -149,10 +139,10 @@
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">About</button>
+            <a href="javascript:void(0)">About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
-                <a href="meettheteam.html">Meet the Team</a>
+                <a href="meet-the-team.html">Meet the Team</a>
             </div>
         </div>
     </nav>
