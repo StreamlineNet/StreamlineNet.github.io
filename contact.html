@@ -62,7 +62,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Base color */
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             z-index: 1;
         }
@@ -76,11 +76,12 @@
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: #444; /* Hover color matches navigation bar */
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
+            background-color: #f9f9f9; /* Keep the base color */
         }
 
         section {
