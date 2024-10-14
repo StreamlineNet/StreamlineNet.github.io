@@ -39,22 +39,21 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
+            position: relative;
         }
 
-        nav a:hover, nav .dropdown:hover .dropdown-content {
-            background-color: #666; /* Gray background for hover */
-            color: white; /* White text for hover */
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
         }
 
         nav .dropdown {
             display: inline-block;
-            position: relative;
         }
 
         nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #444; /* Dark grey */
+            background-color: #555; /* Darker grey for dropdown */
             min-width: 160px;
             z-index: 1;
         }
@@ -67,7 +66,7 @@
         }
 
         nav .dropdown-content a:hover {
-            background-color: #666; /* Gray background for hover */
+            background-color: #777; /* Slightly lighter grey on hover */
         }
 
         nav .dropdown:hover .dropdown-content {
@@ -84,11 +83,6 @@
             color: #333;
         }
 
-        h2 {
-            font-size: 2em;
-            color: #333;
-        }
-
         p {
             font-size: 1.2em;
             line-height: 1.6;
@@ -97,37 +91,35 @@
 
         footer {
             background-color: #444; /* Dark grey */
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 10px;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo here -->
+        <img src="logo.png" alt="Streamline Net Logo">
         <h1>Welcome to Streamline Net</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a href="javascript:void(0)">About</a>
+            <a href="#">About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
-                <a href="meet-the-team.html">Meet the Team</a>
+                <a href="meettheteam.html">Meet the Team</a>
             </div>
         </div>
     </nav>
 
     <section>
-        <h2>Our Mission</h2>
+        <h1>Our Mission</h1>
         <p>Our goal is to create networks for a variety of small businesses and implement them affordably in their place of operation in a timely manner.</p>
-
+        
         <h2>What We Do</h2>
-        <p>We specialize in creating preset networks for small businesses, with a current focus on restaurants.</p>
+        <p>We provide preset networks tailored for small businesses, focusing on restaurants.</p>
     </section>
 
     <footer>
