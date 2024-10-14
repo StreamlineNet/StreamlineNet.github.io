@@ -131,4 +131,54 @@
             color: #fff;
             border: none;
             border-radius: 4px;
-            cursor: pointe
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo image here -->
+        <h1>Contact Streamline Net</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+                <a href="contact.html">Contact Us</a>
+                <a href="meettheteam.html">Meet the Team</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Content -->
+    <section>
+        <h1>Get In Touch</h1>
+        <form action="https://formspree.io/f/mpwagkwo" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Streamline Net - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
