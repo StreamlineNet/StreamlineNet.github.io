@@ -39,22 +39,21 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
+            position: relative;
         }
 
-        nav a:hover, nav .dropdown:hover .dropdown-content {
-            background-color: #666; /* Gray background for hover */
-            color: white; /* White text for hover */
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
         }
 
         nav .dropdown {
             display: inline-block;
-            position: relative;
         }
 
         nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #444; /* Dark grey */
+            background-color: #555; /* Darker grey for dropdown */
             min-width: 160px;
             z-index: 1;
         }
@@ -67,7 +66,7 @@
         }
 
         nav .dropdown-content a:hover {
-            background-color: #666; /* Gray background for hover */
+            background-color: #777; /* Slightly lighter grey on hover */
         }
 
         nav .dropdown:hover .dropdown-content {
@@ -118,10 +117,6 @@
             margin: 15px 0 5px;
         }
 
-        .team-member p {
-            color: #555;
-        }
-
         footer {
             background-color: #444; /* Dark grey */
             color: white;
@@ -132,17 +127,17 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo here -->
+        <img src="logo.png" alt="Streamline Net Logo">
         <h1>Meet the Team</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a href="javascript:void(0)">About</a>
+            <a href="#">About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
-                <a href="meet-the-team.html">Meet the Team</a>
+                <a href="meettheteam.html">Meet the Team</a>
             </div>
         </div>
     </nav>
