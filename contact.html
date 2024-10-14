@@ -21,10 +21,10 @@
         }
 
         header img {
-            max-width: 250px; /* Adjust the width of the logo */
+            max-width: 250px;
             height: auto;
             display: block;
-            margin: 0 auto; /* Center the logo */
+            margin: 0 auto;
         }
 
         nav {
@@ -39,39 +39,39 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
-            position: relative; /* Positioning for dropdown */
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        nav a:hover, nav .dropdown:hover .dropdown-content {
+            background-color: #666; /* Gray background for hover */
+            color: white; /* White text for hover */
         }
 
-        /* Dropdown menu styles */
-        .dropdown {
+        nav .dropdown {
             display: inline-block;
+            position: relative;
         }
 
-        .dropdown-content {
+        nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #444; /* Match the navbar background */
+            background-color: #444; /* Dark grey */
             min-width: 160px;
             z-index: 1;
         }
 
-        .dropdown-content a {
+        nav .dropdown-content a {
             color: white;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
 
-        .dropdown-content a:hover {
-            background-color: #555; /* Darker gray on hover */
+        nav .dropdown-content a:hover {
+            background-color: #666; /* Gray background for hover */
         }
 
-        .dropdown:hover .dropdown-content {
-            display: block; /* Show dropdown on hover */
+        nav .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         section {
@@ -86,7 +86,7 @@
 
         footer {
             background-color: #444; /* Dark grey */
-            color: #fff; /* Set footer text color to white */
+            color: #fff;
             text-align: center;
             padding: 10px;
             width: 100%;
@@ -140,10 +140,10 @@
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a href="#">About</a>
+            <a href="javascript:void(0)">About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
-                <a href="meettheteam.html">Meet the Team</a>
+                <a href="meet-the-team.html">Meet the Team</a>
             </div>
         </div>
     </nav>
