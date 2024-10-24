@@ -21,10 +21,11 @@
         }
 
         nav {
-            background-color: #444;
+            background-color: #444; /* Dark grey */
             color: white;
             padding: 10px;
             text-align: center;
+            position: relative;
         }
 
         nav a {
@@ -32,12 +33,19 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
+        }
+
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
+        }
+
+        nav .dropdown {
+            display: inline-block;
             position: relative;
         }
 
-        /* Remove pointer events for non-clickable dropdown labels */
         nav .dropdown > a {
-            pointer-events: none;
+            pointer-events: none; /* Makes the "About" and "Networking" labels unclickable */
             cursor: default;
         }
 
@@ -81,10 +89,11 @@
         }
 
         footer {
-            background-color: #444;
+            background-color: #444; /* Dark grey */
             color: white;
             text-align: center;
             padding: 10px;
+            position: relative;
         }
     </style>
 </head>
@@ -96,14 +105,14 @@
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a href="#">About</a> <!-- No link here, acting as a label -->
+            <a>About</a> <!-- Not clickable -->
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
                 <a href="meettheteam.html">Meet the Team</a>
             </div>
         </div>
         <div class="dropdown">
-            <a href="#">Networking</a> <!-- No link here, acting as a label -->
+            <a>Networking</a> <!-- Not clickable -->
             <div class="dropdown-content">
                 <a href="overview.html">Overview</a>
                 <a href="questionnaire.html">Questionnaire</a>
