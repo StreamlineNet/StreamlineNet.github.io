@@ -20,15 +20,8 @@
             text-align: center;
         }
 
-        header img {
-            max-width: 250px;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
         nav {
-            background-color: #444; /* Dark grey */
+            background-color: #444;
             color: white;
             padding: 10px;
             text-align: center;
@@ -42,12 +35,10 @@
             position: relative;
         }
 
-        nav a:hover, nav a:focus {
-            text-decoration: underline;
-        }
-
-        nav .dropdown {
-            display: inline-block;
+        /* Remove pointer events for non-clickable dropdown labels */
+        nav .dropdown > a {
+            pointer-events: none;
+            cursor: default;
         }
 
         nav .dropdown-content {
@@ -90,7 +81,7 @@
         }
 
         footer {
-            background-color: #444; /* Dark grey */
+            background-color: #444;
             color: white;
             text-align: center;
             padding: 10px;
@@ -99,21 +90,20 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Streamline Net Logo">
         <h1>Welcome to Streamline Net</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a href="about.html">About</a>
+            <a href="#">About</a> <!-- No link here, acting as a label -->
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
                 <a href="meettheteam.html">Meet the Team</a>
             </div>
         </div>
         <div class="dropdown">
-            <a href="documentation.html">Networking</a>
+            <a href="#">Networking</a> <!-- No link here, acting as a label -->
             <div class="dropdown-content">
                 <a href="overview.html">Overview</a>
                 <a href="questionnaire.html">Questionnaire</a>
@@ -125,12 +115,6 @@
     <section>
         <h1>Empowering Small Businesses with Seamless Networking Solutions</h1>
         <p>At Streamline Net, we specialize in designing, deploying, and managing network systems that keep small businesses connected and secure. From restaurants to warehouses, we provide tailored networking solutions that improve operational efficiency and ensure data safety.</p>
-        
-        <h2>How We Help You Succeed</h2>
-        <p>We deliver customized, ready-to-deploy network systems that fit your unique business needs. Whether you’re setting up a new operation or upgrading your existing infrastructure, we offer scalable and reliable solutions that grow with your business.</p>
-        
-        <h2>Why Choose Streamline Net?</h2>
-        <p>Our expert team works closely with you to understand your business challenges and deliver affordable, fast, and secure networking solutions. From initial consultation to post-implementation support, we are committed to ensuring your network performs at its best.</p>
     </section>
 
     <footer>
