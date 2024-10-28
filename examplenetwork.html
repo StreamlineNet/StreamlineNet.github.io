@@ -94,6 +94,18 @@
             width: 100%;
             bottom: 0;
         }
+
+        .description {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .description h3 {
+            color: #4682B4;
+        }
     </style>
 </head>
 <body>
@@ -125,9 +137,36 @@
         <section>
             <h2>Example Restaurant Network Topology:</h2>
             <div style="text-align: center;">
-                <!-- Corrected image tag, replace 'question.png' with the correct image file name -->
+                <!-- Corrected image tag, replace 'network.png' with the correct image file name -->
                 <img src="network.png" alt="Topology" style="max-width: 80%; height: auto;">
             </div>
+        </section>
+
+        <section class="description">
+            <h3>Network Topology Overview</h3>
+            <p>Our network is designed to efficiently support both staff and guest connections while ensuring security and streamlined communication. Here’s a breakdown of how our network operates:</p>
+
+            <h3>1. Internet Connection</h3>
+            <p>We connect to the internet through a secure cable modem that links to the cloud, providing external access.</p>
+
+            <h3>2. Firewall Protection</h3>
+            <p>The firewall acts as a security layer between the internet and our internal network, filtering incoming and outgoing traffic to keep the network safe.</p>
+
+            <h3>3. VLAN Setup</h3>
+            <p>We use two VLANs (Virtual Local Area Networks) to separate traffic:
+                <ul>
+                    <li><strong>VLAN 10</strong>: for our staff, including PCs, phones, and printers.</li>
+                    <li><strong>VLAN 20</strong>: designated for guest access, ensuring limited access and enhanced security.</li>
+                </ul>
+            </p>
+
+            <h3>4. Switches and Access Points</h3>
+            <p>Our switch manages the traffic flow between various devices like staff computers, phones, printers, and access points. We have separate wireless access points for staff and guests, allowing them to connect securely and with appropriate permissions.</p>
+
+            <h3>5. Device Connections</h3>
+            <p>Staff devices, including POS systems, office computers, and IP phones, are connected to specific switch ports for dedicated connectivity. Guest devices connect through the Guest Wi-Fi network, which is isolated from the staff network for privacy and security.</p>
+
+            <p>This setup ensures reliable performance, controlled access, and a secure environment for both staff and guests.</p>
         </section>
     </main>
 
