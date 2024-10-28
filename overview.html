@@ -20,7 +20,8 @@
         }
 
         header img {
-            max-width: 200px;
+            max-width: 250px; /* Match index.html */
+            height: auto;
         }
 
         nav {
@@ -34,6 +35,7 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-size: 1.2em; /* Match index.html */
         }
 
         nav a:hover {
@@ -48,7 +50,7 @@
         nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #555; /* Darker grey for dropdown */
+            background-color: #555;
             min-width: 160px;
             z-index: 1;
         }
@@ -109,14 +111,14 @@
     <nav>
         <a href="index.html">Home</a>
         <div class="dropdown">
-            <a>About</a> <!-- Not clickable -->
+            <a>About</a>
             <div class="dropdown-content">
                 <a href="contact.html">Contact Us</a>
                 <a href="meettheteam.html">Meet the Team</a>
             </div>
         </div>
         <div class="dropdown">
-            <a>Networking</a> <!-- Not clickable -->
+            <a>Networking</a>
             <div class="dropdown-content">
                 <a href="overview.html">Overview</a>
                 <a href="questionnaire.html">Questionnaire</a>
@@ -125,6 +127,7 @@
         </div>
     </nav>
 
+    <!-- Page content sections -->
     <section>
         <h2>Scalability</h2>
         <p>Scalability is near the top of our priority list regarding the businesses we are working with. We know that one's network needs to be able to grow right alongside the business. That being said, we prioritize ensuring every network we deploy can easily add more devices, locations, etc.</p>
