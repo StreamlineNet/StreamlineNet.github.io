@@ -12,13 +12,15 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+header {
+    background-image: url('back.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
 
-        header {
-            background-color: #4682B4; /* Steel blue */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
 
         header img {
             max-width: 250px;
@@ -28,7 +30,7 @@
         }
 
         nav {
-            background-color: #444; /* Dark grey */
+            background-color: #444; 
             color: white;
             padding: 10px;
             text-align: center;
@@ -84,7 +86,10 @@
             font-size: 2.5em;
             color: #333;
         }
-
+        h4 {
+            font-size: 2.5em;
+            color: #fff;
+        }
         footer {
             background-color: #444;
             color: white;
@@ -111,33 +116,38 @@
 <body>
     <header>
         <img src="logo.png" alt="Streamline Net Logo"> <!-- Add the logo here -->
-        <h1>Example Network - Restaurant</h1>
+        <h4>Example Network - Restaurant</h4>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <a>About</a> <!-- Not clickable -->
-            <div class="dropdown-content">
-                <a href="contact.html">Contact Us</a>
-                <a href="meettheteam.html">Meet the Team</a>
-            </div>
+<nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a>About</a> 
+        <div class="dropdown-content">
+            <a href="contact.html">Contact Us</a>
+            <a href="meettheteam.html">Meet the Team</a>
         </div>
-        <div class="dropdown">
-            <a>Networking</a> <!-- Not clickable -->
-            <div class="dropdown-content">
-                <a href="overview.html">Overview</a>
-                <a href="questionnaire.html">Questionnaire</a>
-                <a href="examplenetwork.html">Example Network</a>
-            </div>
+    </div>
+    <div class="dropdown">
+        <a>Networking</a> 
+        <div class="dropdown-content">
+            <a href="overview.html">Overview</a>
+            <a href="examplenetwork.html">Example Network</a>
         </div>
-    </nav>
+    </div>
+    <!-- New Resources Dropdown -->
+    <div class="dropdown">
+        <a>Resources</a> <!-- New Dropdown Tab -->
+        <div class="dropdown-content">
+            <a href="questionnaire.html">Questionnaire</a> <!-- First section -->
+            <a href="training.html">Training</a> <!-- Second section -->
+        </div>
+    </div>
+</nav>
 
     <main>
         <section>
             <h2>Example Restaurant Network Topology:</h2>
             <div style="text-align: center;">
-                <!-- Corrected image tag, replace 'network.png' with the correct image file name -->
                 <img src="network.png" alt="Topology" style="max-width: 80%; height: auto;">
             </div>
         </section>
