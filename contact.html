@@ -31,7 +31,7 @@ header {
         }
 
         nav {
-            background-color: #444; /* Dark grey */
+            background-color: #444; 
             color: white;
             padding: 10px;
             text-align: center;
@@ -57,7 +57,7 @@ header {
         nav .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #555; /* Darker grey for dropdown */
+            background-color: #555; 
             min-width: 160px;
             z-index: 1;
         }
@@ -67,11 +67,11 @@ header {
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            text-align: left; /* Align dropdown items */
+            text-align: left; 
         }
 
         nav .dropdown-content a:hover {
-            background-color: #777; /* Slightly lighter grey on hover */
+            background-color: #777; 
         }
 
         nav .dropdown:hover .dropdown-content {
@@ -154,31 +154,36 @@ header {
         <h3>Contact Us</h3>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <a>About</a> <!-- Not clickable -->
-            <div class="dropdown-content">
-                <a href="contact.html">Contact Us</a>
-                <a href="meettheteam.html">Meet the Team</a>
-            </div>
+    
+<nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a>About</a> 
+        <div class="dropdown-content">
+            <a href="contact.html">Contact Us</a>
+            <a href="meettheteam.html">Meet the Team</a>
         </div>
-        <div class="dropdown">
-            <a>Networking</a> <!-- Not clickable -->
-            <div class="dropdown-content">
-                <a href="overview.html">Overview</a>
-                <a href="questionnaire.html">Questionnaire</a>
-                <a href="examplenetwork.html">Example Network</a>
-            </div>
+    </div>
+    <div class="dropdown">
+        <a>Networking</a> 
+        <div class="dropdown-content">
+            <a href="overview.html">Overview</a>
+            <a href="examplenetwork.html">Example Network</a>
         </div>
-    </nav>
+    </div>
+    <div class="dropdown">
+        <a>Resources</a> 
+        <div class="dropdown-content">
+            <a href="questionnaire.html">Questionnaire</a> 
+            <a href="training.html">Training</a> 
+        </div>
+    </div>
+</nav>
 
-    <!-- Contact Form Section -->
+  
     <section>
         <h1>Get in Touch</h1>
         <p>If you have any questions or would like to learn more about our services, feel free to reach out!</p>
-        <!-- Form with Formspree or similar backend service -->
         <form action="https://formspree.io/f/mpwagkwo" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
